@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../../pages/Home";
+import SignIn from "../../pages/SignIn";
 // import SignIn from "../../pages/SignIn"; (si tu l’as déjà créé)
 
 const Navigation = () => {
@@ -7,7 +8,7 @@ const Navigation = () => {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/sign-in" element={<SignIn />} /> */}
+        <Route path="/sign-in" element={<SignIn />} />
       </Routes>
     </main>
   );

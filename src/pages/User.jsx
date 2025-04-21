@@ -1,10 +1,12 @@
 import React from "react";
-import accounts from "../data/accounts.json";
+import UserHeader from "../components/user-header/UserHeader";
 import Account from "../components/accounts/Account";
+import accounts from "../data/accounts.json";
 
 const User = () => {
   return (
     <>
+      <UserHeader />
       {accounts.map((account) => (
         <Account key={account.id} account={account} />
       ))}

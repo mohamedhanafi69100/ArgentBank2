@@ -1,7 +1,15 @@
-@use "../sass/header.scss";
-@use "../sass/hero.scss";
-@use "../sass/features.scss";
-@use "../sass/footer.scss";
-@use "../sass/signIn.scss";
-@use "../sass/account.scss";
-@use "../sass/user.scss";
+@use "./header.scss";
+@use "./hero.scss";
+@use "./features.scss";
+@use "./footer.scss";
+@use "./signin.scss"; // ✅ Ceci est crucial
+@use "./user.scss";
+@use "./editName.scss";
+@use "./account.scss";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
